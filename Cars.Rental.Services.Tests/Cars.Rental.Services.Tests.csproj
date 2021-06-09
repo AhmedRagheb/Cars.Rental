@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.11" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cars.Rental.DataAccess\Cars.Rental.DataAccess.csproj" />
+    <ProjectReference Include="..\Cars.Rental.Models\Cars.Rental.Models.csproj" />
+    <ProjectReference Include="..\Cars.Rental.Services.Abstractions\Cars.Rental.Services.Abstractions.csproj" />
+    <ProjectReference Include="..\Cars.Rental.Services\Cars.Rental.Services.csproj" />
+  </ItemGroup>
+</Project>

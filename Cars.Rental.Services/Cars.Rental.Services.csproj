@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cars.Rental.DataAccess\Cars.Rental.DataAccess.csproj" />
+    <ProjectReference Include="..\Cars.Rental.Services.Abstractions\Cars.Rental.Services.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
