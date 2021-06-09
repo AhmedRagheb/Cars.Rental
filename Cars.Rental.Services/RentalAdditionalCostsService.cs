@@ -7,7 +7,7 @@ namespace Cars.Rental.Services
 	{
 		/// <summary>
 		/// Insurance adds 10% per day on top of the car price.
-		/// SnappCar adds 10% per day on top of the car price.
+		/// Adds 10% per day on top of the car price.
 		/// On Saturday and Sunday the base price of the car goes up with 5%.
 		/// </summary>
 		/// <param name="baseCarPricePerDay">base car price per day</param>
@@ -26,9 +26,9 @@ namespace Cars.Rental.Services
 				}
 
 				var insurance = baseCarPricePerDay * .1;
-				var snappCar = baseCarPricePerDay * .1;
+				var additionPerDay = baseCarPricePerDay * .1;
 
-				totalAdditionalCosts += insurance + snappCar + weekendExtra;
+				totalAdditionalCosts += insurance + additionPerDay + weekendExtra;
 			}
 
 			return totalAdditionalCosts;
